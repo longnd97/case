@@ -1,0 +1,56 @@
+.header {
+    color: darkslateblue;
+    text-align: center;
+    font-size: 30px;
+}
+
+#login {
+    position: relative;
+    margin: auto;
+    width: 400px;
+    top: 200px;
+}
+
+#email, #password {
+    height: 68px;
+    width: 350px;
+    margin: 5px;
+    font-size: 18px;
+    border: 0;
+    background-color: antiquewhite;
+    padding: 0 20px 0 30px;
+}
+
+#checkbox {
+    text-align: left;
+}
+
+#submitLogin {
+    margin: 5px;
+    width: 400px;
+    height: 68px;
+    background-color: #827ffe;
+    border: 0;
+    color: white;
+    font-size: 20px;
+}
+
+#check {
+    outline: 1px solid blue;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#forgot {
+    text-decoration: none;
+}
+
+input {
+    border-radius: 15px;
+}
+
+#submitLogin {
+    border-radius: 15px;
+}
