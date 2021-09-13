@@ -57,7 +57,7 @@ class ProductController extends BaseController
     public function delete($id)
     {
         $this->model->delete($id);
-        header("Location:index.php");
+        header("Location:index.php?page=product-list");
     }
 
     public function update($id)
@@ -85,7 +85,7 @@ class ProductController extends BaseController
                 "description" => $_POST["description"]
             ];
             $this->model->update($id, $data);
-            header("Location:index.php");
+            header("Location:index.php?page=product-list");
         }
     }
 
@@ -114,7 +114,6 @@ class ProductController extends BaseController
                 "description" => $_POST["description"]
             ];
             $this->model->detail($id, $data);
-            header("Location:index.php");
         }
     }
 

@@ -1,3 +1,8 @@
+<?php
+session_start();
+$error = $_SESSION['error'];
+unset($_SESSION['error']);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,7 +53,7 @@
     </style>
 </head>
 <body>
-<form id="register" method="post">
+<form id="register" method="post" action="index.php?page=register">
     <div class="header">
         <h3>REGISTER</h3>
     </div>
@@ -57,10 +62,19 @@
             <td colspan="2"><input type="text" id="name" name="name" placeholder="Name"></td>
         </tr>
         <tr>
-            <td colspan="2"><input type="text" id="email" name="email" placeholder="Email"></td>
+            <td style="color: red;text-align:center;margin-top: 2px"><?php echo $error['name'] ?? ''; ?></td>
         </tr>
         <tr>
-            <td colspan="2"><input type="text" id="password" name="password" placeholder="Password"></td>
+            <td colspan="2"><input type="text" id="email" name="email" placeholder="Email"></td>
+        <tr>
+            <td style="color: red;text-align:center;margin-top: 2px"><?php echo $error['email'] ?? ''; ?></td>
+        </tr>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="password" id="password" name="password" placeholder="Password"></td>
+        <tr>
+            <td style="color: red;text-align:center;margin-top: 2px"><?php echo $error['password'] ?? ''; ?></td>
+        </tr>
         </tr>
         <tr>
             <td colspan="2">

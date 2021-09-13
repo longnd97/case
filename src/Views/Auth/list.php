@@ -22,14 +22,11 @@
                             <td><?php echo $user['name'] ?></td>
                             <td><?php echo $user['email'] ?></td>
                             <td><?php echo $user['password'] ?></td>
-                            <td><a href="index.php?page=product-update&id=<?php echo $user['id'] ?>" type="button"
+                            <td><a href="index.php?page=user-update&id=<?php echo $user['id'] ?>" type="button"
                                    class="btn btn-warning">Edit</a></td>
                             <td><a onclick="return confirm('Bạn có muốn xóa ?')"
-                                   href="   index.php?page=product-delete&id=<?php echo $user['id'] ?>" type="button"
+                                   href="   index.php?page=user-delete&id=<?php echo $user['id'] ?>" type="button"
                                    class="btn btn-danger">Delete</a></td>
-                            <td><a href="index.php?page=product-detail&id=<?php echo $user['id'] ?>" type="button"
-                                   class="btn btn-info">Detail</a></td>
-                        </tr>
                     <?php endforeach;
                 } ?>
                 </tbody>

@@ -76,7 +76,7 @@ session_start();
         </tr>
         <?php if ($_SESSION['login_error'] == 'error'): ?>
             <tr>
-                <td colspan="2">Sai tên đăng nhập hoặc mật khẩu</td>
+                <td style="color: red; text-align: center" colspan="2">Sai tên đăng nhập hoặc mật khẩu</td>
             </tr>
         <?php endif; ?>
         <tr>

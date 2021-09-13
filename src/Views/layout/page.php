@@ -12,8 +12,8 @@
                             <div class="card-body">
                                 <img src="images/<?php echo $product['image'] . ".jpg" ?>" style="width: 100%"/>
                             </div>
-                            <div class="card-header">
-                                <?php echo number_format($product['price'],0) ?>
+                            <div class="card-header" style="color: red">
+                                <?php echo number_format($product['price'], 0) . "đ" ?>
                             </div>
                         </div>
                     </div>
@@ -26,12 +26,18 @@
             <a href="" type="button" style="text-align: center" class="list-group-item list-group-item-action active">
                 Hãng
             </a>
-            <a href="index.php?search=iphone" type="button" class="list-group-item list-group-item-action"><img src="images/logo-iphone.png"></a>
-            <a href="index.php?search=samsung" type="button" class="list-group-item list-group-item-action"><img src="images/logo-samsung.png"></a>
-            <a href="index.php?search=oppo" type="button" class="list-group-item list-group-item-action"><img src="images/logo-oppo.jpg"></a>
-            <a href="index.php?search=vivo" type="button" class="list-group-item list-group-item-action"><img src="images/logo-vivo.jpg"></a>
-            <a href="index.php?search=xiaomi" type="button" class="list-group-item list-group-item-action"><img src="images/logo-xiaomi.png"></a>
-            <a href="index.php?search=realme" type="button" class="list-group-item list-group-item-action"><img src="images/logo-realme.png"></a>
+            <a href="index.php?search=iphone" type="button" class="list-group-item list-group-item-action"><img
+                        src="images/logo-iphone.png"></a>
+            <a href="index.php?search=samsung" type="button" class="list-group-item list-group-item-action"><img
+                        src="images/logo-samsung.png"></a>
+            <a href="index.php?search=oppo" type="button" class="list-group-item list-group-item-action"><img
+                        src="images/logo-oppo.jpg"></a>
+            <a href="index.php?search=vivo" type="button" class="list-group-item list-group-item-action"><img
+                        src="images/logo-vivo.jpg"></a>
+            <a href="index.php?search=xiaomi" type="button" class="list-group-item list-group-item-action"><img
+                        src="images/logo-xiaomi.png"></a>
+            <a href="index.php?search=realme" type="button" class="list-group-item list-group-item-action"><img
+                        src="images/logo-realme.png"></a>
         </div>
     </aside>
 </div>

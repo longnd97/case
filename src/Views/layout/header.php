@@ -16,20 +16,20 @@ session_start();
 </head>
 <body>
 <div class="container" style="height: auto">
+    <div style="text-align: right;"><?php echo $_SESSION['name'] ?? '' ?></div>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark mt-2">
         <a class="navbar-brand" href="index.php">Trang chủ</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php?page=product-create">Giới thiệu</a>
+                    <a class="nav-link" href="">Giới thiệu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php?page=product-update">Liên hệ</a>
+                    <a class="nav-link" href="">Liên hệ</a>
                 </li>
                 <?php if (!isset($_SESSION['name'])): ?>
                     <li class="nav-item">
@@ -56,10 +56,6 @@ session_start();
                                href="index.php?page=logout">Đăng xuất</a>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#"><?php echo $_SESSION['name'] ?? '' ?></a>
-                    </li>
-
                 <?php endif ?>
                 <?php if ($_SESSION['email'] == 'admin'): ?>
                     <li class="nav-item dropdown">

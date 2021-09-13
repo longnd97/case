@@ -37,6 +37,14 @@ switch ($page) {
             $userController->index();
         }
         break;
+    case 'product-delete':
+        $id = $_GET['id'];
+        $userController->delete($id);
+        break;
+    case "product-update":
+        $id = $_GET['id'];
+        $userController->update($id);
+        break;
     case "register":
         $userController->register();
         break;
